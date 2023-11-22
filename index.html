@@ -1,54 +1,57 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/home.css">
     <title>FLash Cards</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Flash Cards</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flash Cards</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="create.html">Create Card</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div id="main" class="containers" style="margin-top: 150px !important;">
-    <div id="card-container">
-        <div id="front" class="card-face">
-            <p class="content">Question</p>
-            <p id="content-word" class="content"></p>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="create.html">Create Card</a>
+                </li>
+            </ul>
         </div>
-        <div id="back" class="card-face">
-            <p class="content">Answer</p>
-            <p id="content-meaning" class="content"></p>
+    </nav>
+    <div id="main" class="containers" style="margin-top: 150px !important;">
+        <div id="card-container">
+            <div id="front" class="card-face">
+                <p class="content">Question</p>
+                <p id="content-word" class="content"></p>
+            </div>
+            <div id="back" class="card-face">
+                <p class="content">Answer</p>
+                <p id="content-meaning" class="content"></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="containers">
-    <div id="next-btn">Next</div>
-</div>
+    <div class="containers">
+        <div id="next-btn">Next</div>
+    </div>
 
-<!-- Sharing buttons -->
-<div class="containers share-buttons">
-    <button class="btn btn-primary" onclick="shareToFacebook()">Share to Facebook</button>
-    <button class="btn btn-info" onclick="shareToTwitter()">Share to Twitter</button>
-</div>
+    <!-- Sharing buttons -->
+    <div class="containers share-buttons">
+        <button class="btn btn-primary" onclick="shareToFacebook()">Share to Facebook</button>
+        <button class="btn btn-info" onclick="shareToTwitter()">Share to Twitter</button>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/home.js"></script>
 </body>
+
 </html>
