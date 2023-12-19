@@ -6,7 +6,7 @@ let contentExample = document.querySelector('#content-example');
 let contentMeaning = document.querySelector('#content-meaning');
 let contents = []
 var cardIdx = 0;
-var flipSound = new Audio('assets/flip.mp3'); // Replace with the actual path to your beep sound file
+var flipSound = new Audio('assets/flip.mp3'); //flip audio sound 
 
 fetchAndProcessData();
 
@@ -29,7 +29,7 @@ function populateCard() {
     contentMeaning.innerHTML = content['answer'];
 }
 function fetchAndProcessData() {
-    const url = 'flashcards.txt'; // Replace with the actual path to your text file
+    const url = 'flashcards.txt'; 
 
     fetch(url)
         .then(response => {
@@ -42,7 +42,7 @@ function fetchAndProcessData() {
             console.log('JSON data:', data);
             contents = data;
             populateCard();
-            // Process the JSON array as needed
+            // Process the JSON array 
             data.forEach(item => {
                 console.log(`Item ID: ${item}`);
             });
