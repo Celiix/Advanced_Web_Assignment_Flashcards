@@ -156,3 +156,16 @@ h1 {
 .share-buttons button {
     margin-right: 10px;
 }
+
+/*media query for smaller screens   */
+@media (max-width: 700px) {
+/*     Adjusting card width for smaller screens */
+    #card-container {
+        --card-width: 100%;
+        --card-width: none;
+    }
+/* Adjusting font size for small screens */
+    h1 {
+        font-size: 30px
+    }
+}
