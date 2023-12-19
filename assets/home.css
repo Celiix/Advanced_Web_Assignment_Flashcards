@@ -23,6 +23,7 @@ h1 {
     height: 500px;
 }
 
+/*Card  */
 #card-container {
     height: var(--card-height);
     width: var(--card-width);
@@ -32,11 +33,9 @@ h1 {
     transform-style: preserve-3d;
     transition: all ease-in-out .8s;
 }
-
 #card-container.flipped {
     transform: rotateY(180deg);
 }
-
 .card-face {
     height: 100%;
     width: 100%;
@@ -44,25 +43,22 @@ h1 {
     border-radius: 5px;
     backface-visibility: hidden;
 }
-
 #front {
     background: #222;
     box-shadow: 5px 5px 10px #222;
 }
-
 #back {
     background: #4c8a4d;
     transform: rotateY(180deg);
 }
-
 .flipped #front {
     box-shadow: none;
 }
-
 .flipped #back {
     box-shadow: 5px 5px 10px #222;
 }
 
+/*Card content  */
 .content {
     margin: 5px 30px;
     color: #d5d5d5;
@@ -119,6 +115,7 @@ h1 {
     margin-top: 20px;
 }
 
+/* Next button */
 #next-btn {
     background-color: #1f4190;
     color: #f5f5f5;
