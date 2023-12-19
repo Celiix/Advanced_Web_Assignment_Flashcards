@@ -33,6 +33,7 @@ h1 {
     transform-style: preserve-3d;
     transition: all ease-in-out .8s;
 }
+/*Card flip  */
 #card-container.flipped {
     transform: rotateY(180deg);
 }
