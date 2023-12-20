@@ -27,7 +27,7 @@ function appendFormData() {
 
                 // Create AJAX request to save the updated data
                 var saveXhr = new XMLHttpRequest();
-                saveXhr.open('POST', 'saveData.php', true);
+                saveXhr.open('POST', 'savedata.php', true);
                 saveXhr.setRequestHeader('Content-Type', 'application/json');
 
                 // Send the updated JSON data to the server
@@ -110,7 +110,7 @@ function deleteFlashcard(index) {
                 var updatedData = JSON.stringify(existingData);
 
                 var saveXhr = new XMLHttpRequest();
-                saveXhr.open('POST', 'saveData.php', true);
+                saveXhr.open('POST', 'savedata.php', true);
                 saveXhr.setRequestHeader('Content-Type', 'application/json');
 
                 saveXhr.send(updatedData);
