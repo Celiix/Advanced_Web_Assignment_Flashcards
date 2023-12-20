@@ -1,5 +1,6 @@
 let card = document.querySelector('#card-container');
 let nextButton = document.querySelector('#next-btn');
+let backButton = document.querySelector('#back-btn');
 let contentWord = document.querySelector('#content-word');
 let contentType = document.querySelector('#content-type');
 let contentExample = document.querySelector('#content-example');
@@ -21,6 +22,11 @@ nextButton.addEventListener("click", (event) => {
     cardIdx = (cardIdx + 1) % contents.length;
     populateCard();
 
+});
+
+backButton.addEventListener("click", (event) => {
+    cardIdx = (cardIdx - 1 + contents.length) % contents.length;
+    populateCard();
 });
 
 function populateCard() {
