@@ -179,9 +179,10 @@ h1 {
     #card-container {
         --card-width: 100%;
         --card-width: none;
-    }
+        }
+}
 /* Adjusting font size for small screens */
     h1 {
         font-size: 30px
     }
-}
+
