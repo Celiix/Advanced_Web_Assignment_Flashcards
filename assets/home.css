@@ -29,9 +29,9 @@ h1 {
 
 /*Card  */
 #card-container {
-    height: var(--card-height);
-    width: var(--card-width);
-    max-width: var(--card-max-width);
+    height: 70%;
+    width: 400px;
+    max-width: 350px;
     position: relative;
     border-radius: 5px;
     transform-style: preserve-3d;
@@ -71,7 +71,7 @@ h1 {
 
 #content-word {
     color: #26082e;
-    font-size: 48px;
+    font-size: 42px;
     text-transform: capitalize;
     margin-top: 80px;
 }
